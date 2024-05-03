@@ -105,6 +105,7 @@
 								<p>
 									<a
 										href={`/character/${character.id}`}
+										target="_blank"
 										class="card-text link-warning link-opacity-75-hover link-decorations"
 										style="text-decoration: none;"
 									>

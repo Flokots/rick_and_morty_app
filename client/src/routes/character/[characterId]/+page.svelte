@@ -22,9 +22,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="d-grid gap-2 col-6 mx-auto">
-			<a href="/" class="btn btn-dark" type="button" data-testid="back-button">BACK</a>
-		</div>
+		<!-- <div class="d-grid gap-2 col-6 mx-auto">
+			<a href="/" class="btn btn-dark" type="button" data-testid="back-button">BACK HOME</a>
+		</div> -->
 	</div>
 </section>
 
@@ -69,17 +69,5 @@
 		font-size: 18px;
 		line-height: 1.8;
 	}
-
-	a {
-		padding: 14px 40px;
-		font-size: 20px;
-		margin-top: 0.5em;
-		align-items: flex-start;
-		background-color: #0abbec;
-        border: 0;
-        cursor: pointer;
-		font-weight: 900;
-	}
-
  
 </style>
