@@ -6,7 +6,7 @@
 
 <Navbar />
 
-<div class="space">
+<div>
     <slot></slot>
 </div>
 
