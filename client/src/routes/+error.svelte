@@ -1,5 +1,5 @@
 <script>
-	import { goto } from '$app/navigation';
+	
 </script>
 
 <div class="background-img">
@@ -9,7 +9,10 @@
 			<span>44</span>
 		</div>
 		<p>The page you are trying to search has been <br /> moved to another universe.</p>
-		<button type="button">GET ME HOME</button>
+		
+		<a href="/" type="button" class="back-button btn btn-info">GET ME HOME</a>
+		
+		
 	</div>
 </div>
 
@@ -65,7 +68,7 @@
 			line-height: 22px;
 		}
 
-		button {
+		.back-button {
 			background-color: #0abbec;
 			border: 0;
 			padding: 11px 22px;

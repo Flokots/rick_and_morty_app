@@ -99,7 +99,7 @@
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
 				{#each characters as character}
 					<div class="col">
-						<div class="card shadow-sm rick-and-morty-border">
+						<div class="card shadow-sm rick-and-morty-border rick-and-morty-card">
 							<img src={character.image} alt={character.name} width="100%" height="100%" />
 							<div class="card-body">
 								<p>
@@ -145,6 +145,10 @@
 </div>
 
 <style>
+	.rick-and-morty-card {
+		background-color: rgba(4, 34, 42, 0.958);
+		color: white;
+	}
 	.album-color {
 		background-color: rgba(4, 34, 42, 0.958);
 	}
