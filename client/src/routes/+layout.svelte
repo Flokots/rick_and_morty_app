@@ -1,14 +1,16 @@
 <script>
+    import '../styles.css';
     import Navbar from "../lib/Navbar.svelte";
     import Footer from "../lib/Footer.svelte";
 </script>
 
 <Navbar />
 
-<slot />
+<div>
+    <slot></slot>
+</div>
 
 <Footer />
 
 <style>
-    
 </style>
