@@ -9,7 +9,6 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
   - Implement search functionality to filter characters by name.
   - Display a "not found" message if no characters match the search query.
   - Clicking on a character's name leads to a details page.
-  - Browser's back button functionality is implemented to take the user back to the exact same page they were on.
   
 - **User Authentication**:
   - JWT-based authentication system.
@@ -61,6 +60,9 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
 - **Viewing Character Details**: Click on a character's name to view more details.
 - **User Authentication**: Sign up or log in to manage your favorites.
 - **Managing Favorites**: Like characters to add them to your favorites list. View your favorites on the favorites page.
+
+### Future Plans
+ - Browser's back button functionality is implemented to take the user back to the exact same page they were on.
 
 ### Acknowledgments
 * [Rick and Morty API](https://rickandmortyapi.com/) for the character data.
