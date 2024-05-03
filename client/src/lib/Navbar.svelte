@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <header data-bs-theme="dark">
@@ -47,7 +46,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
 					height="40"
-					fill="#aaaaaa"
+					fill="#0abbec"
 					stroke="black"
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -70,6 +69,7 @@
 				aria-controls="navbarHeader"
 				aria-expanded="false"
 				aria-label="Toggle navigation"
+				style="background-color: #0abbec;"
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -79,11 +79,11 @@
 
 <style>
 	.navbar-brand svg {
-		stroke: black;
+		stroke: #0abbec;
 	}
 
-    .link-text {
-    padding: 0.5em;
-    color: #0abbec;
-  }
+	.link-text {
+		padding: 0.5em;
+		color: #0abbec;
+	}
 </style>
