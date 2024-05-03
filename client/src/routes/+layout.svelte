@@ -6,11 +6,12 @@
 
 <Navbar />
 
-<div>
+<div class="space">
     <slot></slot>
 </div>
 
 <Footer />
 
 <style>
+
 </style>
