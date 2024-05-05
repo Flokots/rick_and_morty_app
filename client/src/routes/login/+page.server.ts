@@ -4,8 +4,11 @@ import type { Action, Actions, PageServerLoad } from './$types'
 
 import { db } from '$lib/database'
 
-export const load: PageServerLoad = async () => {
-  // todo
+export const load: PageServerLoad = async ({ locals }) => {
+  // redirect user if logged in
+  if (locals.user) {
+    redirect(302, '/')
+  }
 }
 
 const login: Action = async ({ cookies, request }) => {

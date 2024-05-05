@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 </script>
 
 <header data-bs-theme="dark">
@@ -61,9 +62,21 @@
 					</path>
 				</svg>
 			</a>
-			
+
+			{#if !$page.data.user}
+				<a href="/login" class="btn btn-outline-info">Login</a>
+				<a href="/register" class="btn btn-outline-success">Register</a>
+			{/if}
+
+			{#if $page.data.user}
+				<a href="/admin" class="btn btn-outline-info">Admin</a>
+				<a href="/favorites" class="btn btn-outline-success">Favorites</a>
+				<form action="/logout" method="POST">
+					<button type="submit" class="btn btn-outline-warning">Log out</button>
+				</form>
+			{/if}
 			<button
-				class="navbar-toggler"
+				class="navbar-toggler nav-toggler"
 				type="button"
 				data-bs-toggle="collapse"
 				data-bs-target="#navbarHeader"
@@ -79,6 +92,12 @@
 </header>
 
 <style>
+	.nav-toggler {
+		margin-left: 1em;
+	}
+	/* .auth-buttons {
+		align-items: right;
+	} */
 	.navbar-brand svg {
 		stroke: #0abbec;
 	}
