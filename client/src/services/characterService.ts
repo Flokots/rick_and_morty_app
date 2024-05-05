@@ -1,6 +1,6 @@
 // src/lib/characterService.ts
 import axios from 'axios';
-import type { Character, ApiResponse } from '../types';
+import type { ApiResponse } from '../types';
 
 const BASE_URL = 'https://rickandmortyapi.com/api/character';
 
@@ -14,12 +14,4 @@ const BASE_URL = 'https://rickandmortyapi.com/api/character';
     }
   }
   
-  export async function getCharacter(id: string): Promise<Character | string> {
-    try {
-      const response = await axios.get<Character>(`${BASE_URL}/${id}`);
-      return response.data;
-    } catch (error) {
-      console.error('Error fetching character:', error);
-      return 'Error fetching character';
-    }
-  }
+  

@@ -11,7 +11,7 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
   - Clicking on a character's name leads to a details page.
   
 - **User Authentication**:
-  - JWT-based authentication system.
+  - Authentication using cookies.
   - Login and signup functionality.
   - Protected routes that require authentication.
   - Users can like characters and manage their favorite characters.
