@@ -94,7 +94,7 @@
 <div class="album py-5 album-color">
 	<div class="container">
 		{#if errorMessage}
-			<p>{errorMessage}</p>
+			<p class="error">{errorMessage}</p>
 		{:else}
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
 				{#each characters as character}
@@ -185,5 +185,9 @@
 
 	.page-button {
 		margin: 0.5em;
+	}
+
+	.error {
+		color: tomato;
 	}
 </style>
