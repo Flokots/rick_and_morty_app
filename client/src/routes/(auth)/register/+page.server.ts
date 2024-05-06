@@ -2,7 +2,7 @@ import { fail, redirect } from '@sveltejs/kit'
 import type { Action, Actions, PageServerLoad } from './$types'
 import bcrypt from 'bcrypt'
 
-import { db } from '$lib/database'
+import { db } from '$lib/server/database'
 
 // using an enum for user roles to avoid typos
 enum Roles {

@@ -2,7 +2,7 @@ import { fail, redirect } from '@sveltejs/kit'
 import bcrypt from 'bcrypt'
 import type { Action, Actions, PageServerLoad } from './$types'
 
-import { db } from '$lib/database'
+import { db } from '$lib/server/database'
 
 export const load: PageServerLoad = async ({ locals }) => {
   // redirect user if logged in
