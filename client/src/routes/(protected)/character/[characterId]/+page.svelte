@@ -1,6 +1,5 @@
 <script>
-	
-	export let data;
+export let data;
 	let { character } = data;
 
 	async function toggleFavorite() {
