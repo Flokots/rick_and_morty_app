@@ -10,24 +10,18 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
   - Display a "not found" message if no characters match the search query.
   - Clicking on a character's name leads to a details page.
   
-- **User Authentication**:
+- **Backend**:
   - Authentication using cookies.
   - Login and signup functionality.
   - Protected routes that require authentication.
-  - Users can like characters and manage their favorite characters.
+  - Users can like and unlike characters.
   - Liked characters are displayed on a favorites page.
-  - Users can remove characters from their favorites list.
-
-- **Backend**:
   - SQLite database used for storing user data and character likes.
-  - CRUD operations for characters and user favorites.
 
 ## Tech Stack
 
 - SvelteKit
-- TypeScript
-- SQLite
-- JWT (JSON Web Tokens)
+- SQLite + Prisma
 
 ## Getting Started
 
@@ -61,8 +55,6 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
 - **User Authentication**: Sign up or log in to manage your favorites.
 - **Managing Favorites**: Like characters to add them to your favorites list. View your favorites on the favorites page.
 
-### Future Plans
- - Browser's back button functionality is implemented to take the user back to the exact same page they were on.
 
 ### Acknowledgments
 * [Rick and Morty API](https://rickandmortyapi.com/) for the character data.

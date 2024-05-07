@@ -1,9 +1,14 @@
 import { addCharacterToDatabase } from '$lib/server/database';
 import { getCharacterById } from '$lib/services/characterService';
+import { redirect } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 
 
-export const load = async ({ params }) => {
-
+export const load: PageServerLoad = async ({ locals, params }) => {
+    if (!locals.user) {
+        redirect(302, '/')
+      }
+      
     try {
         // Fetch character data
         const characterData = await getCharacterById(params.characterId);
