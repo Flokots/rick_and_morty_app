@@ -1,5 +1,5 @@
-import { getCharacterById } from '$lib/services/characterService';
 import { addCharacterToDatabase } from '$lib/server/database';
+import { getCharacterById } from '$lib/services/characterService';
 
 
 export const load = async ({ params }) => {

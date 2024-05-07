@@ -1,6 +1,7 @@
 <script>
+	
 	export let data;
-	const { character } = data;
+	let { character } = data;
 
 	async function toggleFavorite() {
 		try {
@@ -8,11 +9,10 @@
 				method: 'PUT'
 			});
 
-			// @ts-ignore
-			character.update((value) => ({
-				...value,
-				isFavorite: !value.isFavorite
-			}));
+			character = {
+				...character,
+				isFavorite: !character.isFavorite
+			};
 		} catch (error) {
 			console.error('Error toggling favorite:', error);
 		}
@@ -36,7 +36,7 @@
 					<p><b>Location: </b>{character.location.name}</p>
 					<p><b>Created: </b>{character.created}</p>
 				</div>
-				<button class="btn btn-info" on:click={toggleFavorite}>
+				<button class="btn btn-info" on:click|preventDefault={toggleFavorite}>
 					{#if character.isFavorite}
 						Unlike
 					{:else}

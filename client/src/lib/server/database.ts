@@ -89,7 +89,7 @@ export async function addCharacterToDatabase(character: Character) {
       });
     }
 
-    console.log(`Character with ID ${character.id} added to the database successfully`);
+    console.log(`${character.name} added to the database successfully`);
   } catch (error) {
     throw new Error(`Failed to add character to the database: ${error}`);
   }

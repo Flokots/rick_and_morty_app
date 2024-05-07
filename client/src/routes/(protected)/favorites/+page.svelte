@@ -9,7 +9,6 @@
 	  <div>
 		{#if $page.data.user}
 		<h1 class="heading">Favorite Characters</h1>
-		  <p>Welcome {$page.data.user.name} Here are your favorite characters: </p>
 		{/if}
   
 		{#if $page.data.user.role === 'ADMIN'}
@@ -18,13 +17,35 @@
 		  </form>
 		{/if}
   
-		{#each favorites as favorite}
-		  <div>
-			<h2>{favorite.character.name}</h2>
-			<p>Status: {favorite.character.status}</p>
-			<p>Species: {favorite.character.species}</p>
-		  </div>
-		{/each}
+		<div class="container">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+				{#each favorites as favorite}
+					<div class="col">
+						<div class="card shadow-sm rick-and-morty-border rick-and-morty-card">
+							<img src={favorite.character.image} alt={favorite.character.name} width="100%" height="100%" />
+							<div class="card-body">
+								<p>
+									<a
+										href={`/character/${favorite.character.id}`}
+										target="_blank"
+										class="card-text link-warning link-opacity-75-hover link-decorations"
+										style="text-decoration: none;"
+									>
+										<b>Name: </b>{favorite.character.name}
+									</a>
+								</p>
+								<p class="card-text" data-testid="character-species">
+									<b>Species: </b>{favorite.character.species}
+								</p>
+								<p class="card-text" data-testid="character-status">
+									<b>Status: </b>{favorite.character.status}
+								</p>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
 	  </div>
 	</div>
   </section>
