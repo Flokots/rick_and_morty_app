@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import type { Character, ApiResponse } from '../types';
-	import { getCharacters } from '../services/characterService';
+	import type { Character, ApiResponse } from '../lib/types';
+	import { getCharacters } from '../lib/services/characterService';
 
 	let characters: Character[] = [];
 	let pageInfo: ApiResponse['info'] = { count: 0, pages: 0, next: null, prev: null };

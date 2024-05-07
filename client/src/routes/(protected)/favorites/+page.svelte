@@ -1,8 +1,6 @@
-<!-- client/src/routes/(protected)/favorites/+page.svelte -->
 <script lang="ts">
 	import { page } from '$app/stores';
   
-	// Accessing the props from the $page store
 	let favorites = $page.data.props.favorites || [];
   </script>
   
@@ -20,13 +18,11 @@
 		  </form>
 		{/if}
   
-		<!-- Displaying favorite characters -->
 		{#each favorites as favorite}
 		  <div>
 			<h2>{favorite.character.name}</h2>
 			<p>Status: {favorite.character.status}</p>
 			<p>Species: {favorite.character.species}</p>
-			<!-- Add more character details as needed -->
 		  </div>
 		{/each}
 	  </div>
