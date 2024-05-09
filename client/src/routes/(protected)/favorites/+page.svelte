@@ -31,7 +31,14 @@
 									/>
 									<div class="card-body">
 										<p class="card-text" data-testid="character-name">
-											<b>Species: </b>{favorite.character.name}
+											<a
+										href={`/character/${favorite.character.id}`}
+										target="_blank"
+										class="card-text link-warning link-opacity-75-hover link-decorations"
+										style="text-decoration: none;"
+									>
+										<b>Name: </b>{favorite.character.name}
+									</a>
 										</p>
 										<p class="card-text" data-testid="character-species">
 											<b>Species: </b>{favorite.character.species}

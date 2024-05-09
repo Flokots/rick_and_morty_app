@@ -1,4 +1,3 @@
-// src/routes/character/[characterId]/+server.ts
 import { toggleFavorite } from '$lib/server/database';
 
 export async function PUT({ locals, params }) {
