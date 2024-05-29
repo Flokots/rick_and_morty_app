@@ -32,7 +32,7 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
    ```
 2. Navigate into the project directory:
    ```
-   cd rick-and-morty-application
+   cd rick-and-morty-application/client
    ```
 3. Install dependencies:
    ```
@@ -46,6 +46,11 @@ This is a web application built with SvelteKit and TypeScript, designed to fetch
 5. Install SQLite:
    ```
    npm install sqlite3
+   ```
+
+6. Generate Prisma DB
+   ```
+   npx prisma generate
    ```
 
 ### Usage
